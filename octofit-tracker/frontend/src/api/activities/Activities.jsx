@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { fetchCollection } from '../api'
+import { fetchCollection } from '../index'
 
 function Activities() {
   const [activities, setActivities] = useState([])

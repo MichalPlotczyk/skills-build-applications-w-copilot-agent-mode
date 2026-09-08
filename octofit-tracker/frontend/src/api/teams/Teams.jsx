@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { fetchCollection } from '../api'
+import { fetchCollection } from '../index'
 
 function Teams() {
   const [teams, setTeams] = useState([])
