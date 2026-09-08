@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { fetchCollection } from '../index'
+import { fetchCollection } from '../api'
 
 function Leaderboard() {
   const [entries, setEntries] = useState([])
