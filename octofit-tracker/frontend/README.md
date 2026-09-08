@@ -30,3 +30,16 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+## API configuration
+
+Define `VITE_CODESPACE_NAME` in `.env.local` when running the frontend against
+the Codespaces backend:
+
+```bash
+cp .env.example .env.local
+```
+
+Then replace `your-codespace-name` with the value of `CODESPACE_NAME`. The app
+uses `https://${VITE_CODESPACE_NAME}-8000.app.github.dev/api` when configured
+and falls back to `http://localhost:8000/api` when the variable is unset.
